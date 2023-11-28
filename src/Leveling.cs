@@ -1,5 +1,4 @@
-﻿#pragma warning disable IDE1006 // Naming Styles
-#nullable enable
+﻿#nullable enable
 
 using System;
 using System.Collections.Generic;
@@ -17,9 +16,9 @@ namespace ItsYourChoice.Patches
 {
 	internal readonly struct Limb
 	{
-		public readonly string _display;
-
 		public readonly BodyPart Part;
+
+		private readonly string _display;
 
 		public Limb(BodyPart part)
 		{
@@ -255,11 +254,14 @@ namespace ItsYourChoice.Patches
 
 	internal static class Extensions
 	{
+#pragma warning disable IDE1006 // Naming Styles
 		public static char charAtOr(this HotkeySpread self, int n, char defaulted)
 		{
 			char c = self.charAt(n);
 			return c != '\0' ? c : defaulted;
 		}
+
+#pragma warning restore IDE1006 // Naming Styles
 
 		public static SortedList<T> ToSortedList<T>(this IEnumerable<(T, string)> self)
 		{

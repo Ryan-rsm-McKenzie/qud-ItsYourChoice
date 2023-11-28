@@ -80,7 +80,7 @@ namespace ItsYourChoice
 				if (matcher.IsValid) {
 					stop = matcher.Pos;
 				} else {
-					Logger.buildLog.Error("Failed to mutant branch end for nectar injector!");
+					Logger.buildLog.Error("Failed to locate mutant branch end for nectar injector!");
 					return instructions;
 				}
 			}

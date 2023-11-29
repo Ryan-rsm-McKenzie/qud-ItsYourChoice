@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option ID="Option_RSM_ItsYourChoice_Leveling" DisplayText="Choose chimera body parts"
+    Category="Mods: It's Your Choice" Type="Checkbox" Default="Yes"></option>
+  <option ID="Option_RSM_ItsYourChoice_Injector" DisplayText="Choose eaters' nectar injector rewards"
+    Category="Mods: It's Your Choice" Type="Checkbox" Default="Yes"></option>
+</options>

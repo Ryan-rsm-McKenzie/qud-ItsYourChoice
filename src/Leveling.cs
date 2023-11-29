@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Reflection.Emit;
 using ConsoleLib.Console;
 using HarmonyLib;
@@ -217,6 +218,8 @@ namespace ItsYourChoice.Patches
 	public class StatusScreen_BuyRandomMutation
 	{
 		public static void Detour(Mutations subject) => LimbScreen.Show(subject);
+
+		public static bool Prepare(MethodBase _) => new Configuration().Leveling;
 
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{

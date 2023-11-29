@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Reflection.Emit;
 using HarmonyLib;
 using XRL.UI;
@@ -41,6 +42,8 @@ namespace ItsYourChoice
 				subject.GetStat("AP").BaseValue += dosage;
 			}
 		}
+
+		public static bool Prepare(MethodBase _) => new Configuration().Injector;
 
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{

@@ -1,6 +1,8 @@
 {
-	"Author": "Ryan McKenzie",
+	"WorkshopId": 3099213021,
+	"Title": "It's Your Choice",
 	"Description": "Ever wanted 8 arms? Or 8 legs? Or 8 heads? Choose what parts your chimera grows and where they grow them. It's your choice.",
-	"ID": "RSM_ItsYourChoice",
-	"Version": "1.0.0"
+	"Tags": "Cheat,Script,Stable",
+	"Visibility": "0",
+	"ImagePath": "preview.png"
 }
